@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../static/img/health.ico">
+		<title>Health App</title>
+		<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+		<!-- Bootstrap core CSS -->
+		<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="../static/css/carousel.css" rel="stylesheet">
+		<style>
+			.img{
+				width: 20vw;
+				height: 20vh;
+				object-fit: cover;
+			}
+		</style>
+	</head>
+	<body class="mw-100 pb-0">
+		<header>
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+				<a class="navbar-brand ml-lg-5" href="#">Health App</a>
+				<!-- <button class="navbar-toggler ml-5" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button> -->
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav  ml-auto mr-5">
+						<li class="nav-item active">
+							<a class="nav-link" href="{{url_for('heart')}}">Heart Disease</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="{{url_for('kidney')}}">Kidney Disease</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="{{url_for('diabetes')}}">Diabetes</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="{{url_for('liver')}}">Liver Diease</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="{{url_for('cancer')}}">Cancer</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="container-fluid mw-100 h-100 px-5 pt-4 pb-0">
+			<div class="row mw-100 ">
+				<div class="col-md-6 col-lg-4 d-flex">
+					<a class="nav-link" href="{{url_for('cancer')}}"><img class="mx-auto same_size_images " src="../static/images/cancer.jpg" style='height: 100%; width: 100%; object-fit: cover' /></a>
+				</div>
+
+				<div class="col-md-6 col-lg-4 d-flex">
+					<a class="nav-link" href="{{url_for('kidney')}}"><img class="mx-auto same_size_images" src="../static/images/kidney_disease.jpg" style='height: 100%; width: 100%; object-fit: cover' /></a>
+				</div>
+				
+				<div class="col-md-6 col-lg-4 d-flex">
+					<a class="nav-link" href="{{url_for('diabetes')}}"><img class="mx-auto same_size_images" src="../static/images/diabetes_disease.jpg" style='height: 100%; width: 100%; object-fit: cover'/></a>
+				</div>
+				<div class="col-md-0 col-lg-2"></div>
+				
+				<div class="col-md-6 col-lg-4 d-flex">
+					<a class="nav-link" href="{{url_for('liver')}}"><img class="mx-auto same_size_images" src="../static/images/liver_disease.jpg"  style='height: 100%; width: 100%; object-fit: cover'/></a>
+				</div>
+				
+				<div class="col-md-6 col-lg-4 d-flex">
+					<a class="nav-link" href="{{url_for('heart')}}"><img class="mx-auto same_size_images" src="../static/images/heart_disease.jpg" style='height: 100%; width: 100%; object-fit: cover' /></a>
+				</div>
+				<div class="col-md-3 col-lg-2"></div>
+			</div>
+		</div>
+
+
+        <footer class="fixed-bottom bg-white">
+            <h5 class="text-right mr-3">&copyPrerak Shah</h5>
+        </footer>
+    </main>
+							<!-- Bootstrap core JavaScript
+							================================================== -->
+							<!-- Placed at the end of the document so the pages load faster -->
+							<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+							<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+							<script src="../static/js/vendor/popper.min.js"></script>
+							<script src="../static/js/bootstrap.min.js"></script>
+							<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+							<script src="../static/js/holder.min.js"></script>
+						</body>
+					</html>
