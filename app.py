@@ -1,6 +1,5 @@
 from flask import Flask, render_template
 from flask import Flask, render_template, url_for, flash, redirect
-from keras.models import load_model
 from flask import request
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler,StandardScaler

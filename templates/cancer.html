@@ -164,15 +164,13 @@
               required="required" placeholder="Mean of the Area">
           </div>
           <div class="slidecontainer">
-            <label for="Percentage">Percentage</label>
-            <input type="range" value="50" min="0" max="100" name="Percentage"
+            <label for="Threshold">Threshold (Select the threshold for which you want to see the prediction)</label>
+            <input type="range" value="50" min="0" max="100" name="Threshold"
               oninput="this.nextElementSibling.value = this.value">
             <output>50</output>
           </div>
           <button type="submit" class="btn btn-danger">Predict</button>
         </form>
-        <p class="text-danger">{{prediction_text_neg}}</p>
-        <p class="text-success">{{prediction_text_pos}}</p>
       </div>
       <div class="col-lg-6 col-md-6 col-12 my-auto">
         <img src="../static/images/cancer.jpg" width="100%" class="">
