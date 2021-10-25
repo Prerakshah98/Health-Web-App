@@ -87,7 +87,6 @@
         <h4 class="text-danger">{{prediction_text_neg}}</h4>
         <h4 class="text-success">{{prediction_text_pos}}</h4>
         <form action="{{ url_for('predict_diabetes')}}" method="post">
-          <!-- <form action="/predict/" method="POST"> -->
           <div class="form-group">
             <label for="Pregnancies">No. of Pregnencies</label>
             <input class="form-control" type="number" id="Pregnancies" name="Pregnancies" required="required"
@@ -120,7 +119,7 @@
           <div class="slidecontainer">
             <label for="Threshold">Threshold (Select the threshold for which you want to see the prediction)</label>
             <input type="range" value="50" min="0" max="100" name="Threshold"
-              oninput="this.nextElementSibling.value = this.value">
+                          oninput="this.nextElementSibling.value = this.value">
             <output>50</output>
           </div>
           <button type="submit" class="btn btn-danger">Predict</button>

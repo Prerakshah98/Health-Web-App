@@ -36,9 +36,9 @@ def predict_diabetes():
         # print("before",float_features)
         sc = MinMaxScaler()
         float_features = sc.fit_transform(float_features[:, np.newaxis]) 
-        # print("after",float_features)
+        print("after",float_features)
         float_features=float_features.reshape(1,-1)
-        per = float(request.form["Percentage"])
+        per = float(request.form["Threshold"])
         per=per/100
         print(per)
         result=model.predict_proba(float_features)[0][1]
@@ -65,7 +65,7 @@ def predict_liver():
         sc = MinMaxScaler()
         float_features = sc.fit_transform(float_features[:, np.newaxis]) 
         float_features=float_features.reshape(1,-1)
-        per = float(request.form["Percentage"])
+        per = float(request.form["Threshold"])
         per=per/100
         # features = [np.array(float_features)]
         print(float_features)
@@ -97,7 +97,7 @@ def predict_heart():
         float_features = sc.fit_transform(float_features[:, np.newaxis]) 
         print("after",float_features)
         float_features=float_features.reshape(1,-1)
-        per = float(request.form["Percentage"])
+        per = float(request.form["Threshold"])
         per=per/100
         # features = [np.array(float_features)]
         # print(float_features)
@@ -127,7 +127,7 @@ def predict_kidney():
         float_features = sc.fit_transform(float_features[:, np.newaxis]) 
         print("after",float_features)
         float_features=float_features.reshape(1,-1)
-        per = float(request.form["Percentage"])
+        per = float(request.form["Threshold"])
         per=per/100
         # features = [np.array(float_features)]
         # print(float_features)
@@ -158,7 +158,7 @@ def predict_cancer():
         float_features = sc.fit_transform(float_features[:, np.newaxis]) 
         # print("after",float_features)
         float_features=float_features.reshape(1,-1)
-        per = float(request.form["Percentage"])
+        per = float(request.form["Threshold"])
         per=per/100
         # features = [np.array(float_features)]
         # print(float_features)
