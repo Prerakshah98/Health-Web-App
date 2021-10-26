@@ -29,7 +29,7 @@ def cancer():
 def predict_diabetes():
     print("HELLO PREDICT DIABETES")  
     if request.method == "POST":
-        model=pickle.load(open("C:/Users/prera/Desktop/FINALPROJECT/models/diabetes_model.pkl","rb"))
+        model=pickle.load(open("models/diabetes_model.pkl","rb"))
         float_features = [x for x in request.form.values()]
         float_features = float_features[:-1]
         float_features=np.array(float_features)
@@ -58,7 +58,7 @@ def predict_diabetes():
 def predict_liver():
     print("HELLO PREDICT LIVER")  
     if request.method == "POST":
-        model=pickle.load(open("C:/Users/prera/Desktop/FINALPROJECT/models/liver_model.pkl","rb"))
+        model=pickle.load(open("models/liver_model.pkl","rb"))
         float_features = [x for x in request.form.values()]
         float_features = float_features[:-1]
         float_features=np.array(float_features)
@@ -87,7 +87,7 @@ def predict_liver():
 def predict_heart():
     print("HELLO PREDICT HEART")  
     if request.method == "POST":
-        model=pickle.load(open("C:/Users/prera/Desktop/FinalProject/models/heart_model.pkl","rb"))
+        model=pickle.load(open("models/heart_model.pkl","rb"))
         float_features = [x for x in request.form.values()]
         print(float_features)
         float_features = float_features[:-1]
@@ -118,7 +118,7 @@ def predict_heart():
 def predict_kidney():
     print("HELLO PREDICT KIDNEY")  
     if request.method == "POST":
-        model=pickle.load(open("C:/Users/prera/Desktop/FINALPROJECT/models/kidney_model.pkl","rb"))
+        model=pickle.load(open("models/kidney_model.pkl","rb"))
         float_features = [x for x in request.form.values()]
         float_features = float_features[:-1]
         float_features=np.array(float_features)
@@ -148,7 +148,7 @@ def predict_kidney():
 def predict_cancer():
     print("HELLO PREDICT CANCER")  
     if request.method == "POST":
-        model=pickle.load(open("C:/Users/prera/Desktop/FINALPROJECT/models/cancer_model.pkl","rb"))
+        model=pickle.load(open("models/cancer_model.pkl","rb"))
         # model = load_model('C:/Users/prera/Desktop/WEB APPLICATION/MAchinelearning/diabetes.h5')
         float_features = [x for x in request.form.values()]
         float_features = float_features[:-1]
