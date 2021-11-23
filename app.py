@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-from flask import Flask, render_template, url_for, flash, redirect
 from flask import request
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler,StandardScaler
@@ -25,9 +24,10 @@ def liver():
 def cancer():
     return render_template("cancer.html")
 
+# Code for Diabetes prediction
 @app.route("/predict_diabetes",methods=["POST"])
 def predict_diabetes():
-    print("HELLO PREDICT DIABETES")  
+    # print("HELLO PREDICT DIABETES")  
     if request.method == "POST":
         model=pickle.load(open("models/diabetes_model.pkl","rb"))
         float_features = [x for x in request.form.values()]
@@ -53,10 +53,10 @@ def predict_diabetes():
         prediction_pos = f"No need to fear. You have no dangerous symptoms of the disease. You only have {result:.2f}% chances of getting disease."
         return(render_template("diabetes.html", prediction_text_pos=prediction_pos))       
 
-
+# Code for liver prediction
 @app.route("/predict_liver",methods=["POST"])
 def predict_liver():
-    print("HELLO PREDICT LIVER")  
+    # print("HELLO PREDICT LIVER")  
     if request.method == "POST":
         model=pickle.load(open("models/liver_model.pkl","rb"))
         float_features = [x for x in request.form.values()]
@@ -82,10 +82,10 @@ def predict_liver():
         return(render_template("liver.html", prediction_text_pos=prediction_pos))
          
 
-
+# Code for heart prediction
 @app.route("/predict_heart",methods=["POST"])
 def predict_heart():
-    print("HELLO PREDICT HEART")  
+    # print("HELLO PREDICT HEART")  
     if request.method == "POST":
         model=pickle.load(open("models/heart_model.pkl","rb"))
         float_features = [x for x in request.form.values()]
@@ -113,10 +113,10 @@ def predict_heart():
         prediction_pos = f"No need to fear. You have no dangerous symptoms of the disease. You only have {result:.2f}% chances of getting disease."
         return(render_template("heart.html", prediction_text_pos=prediction_pos))
                
-
+# Code for kidney prediction
 @app.route("/predict_kidney",methods=["POST"])
 def predict_kidney():
-    print("HELLO PREDICT KIDNEY")  
+    # print("HELLO PREDICT KIDNEY")  
     if request.method == "POST":
         model=pickle.load(open("models/kidney_model.pkl","rb"))
         float_features = [x for x in request.form.values()]
@@ -143,10 +143,10 @@ def predict_kidney():
             prediction_pos = f"No need to fear. You have no dangerous symptoms of the disease. You only have {result:.2f}% chances of getting disease."
             return(render_template("kidney.html", prediction_text_pos=prediction_pos))
      
-
+# Code for cancer prediction
 @app.route("/predict_cancer",methods=["POST"])
 def predict_cancer():
-    print("HELLO PREDICT CANCER")  
+    # print("HELLO PREDICT CANCER")  
     if request.method == "POST":
         model=pickle.load(open("models/cancer_model.pkl","rb"))
         # model = load_model('C:/Users/prera/Desktop/WEB APPLICATION/MAchinelearning/diabetes.h5')
@@ -174,7 +174,6 @@ def predict_cancer():
             result = result*100
             prediction_pos = f"No need to fear. You have no dangerous symptoms of the disease. You only have {result:.2f}% chances of getting disease."
             return(render_template("cancer.html", prediction_text_pos=prediction_pos))
-
 
 if __name__=="__main__":
     app.run(port=5000, debug=True)

@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="../static/img/health.ico">
-  <!-- Bootstrap CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -55,9 +53,6 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg_custom">
       <a class="navbar-brand ml-5" href="{{url_for('main')}}">Health App</a>
-      <!-- <button class="navbar-toggler ml-5" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button> -->
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav  ml-auto mr-5">
           <li class="nav-item active">
@@ -79,7 +74,6 @@
       </div>
     </nav>
   </header>
-  <!--Mask-->
   <div id="intro" class="container-fluid view p-5">
     <h1 class="text-center text-capitalize pt-5">Kidney</h1>
     <hr class="w-75 mx-auto">
@@ -97,31 +91,11 @@
             <input class="form-control" type="number" id="bp" name="Year" required="required"
               placeholder="Blood Pressure">
           </div>
-          <!-- 
-              <div class="form-group">
-                <label for="sg">Specific Gravity</label>
-                <input class="form-control" type="number" step="any" id="sg" name="sg" required="required" placeholder="Specific Gravity">
-              </div> -->
-
-          <!-- <div class="form-group">
-                <label for="al">Albumin</label>
-                <input class="form-control" type="number" id="al" name="al" required="required" placeholder="Albumin">
-              </div> -->
-
           <div class="form-group">
             <label for="su">Blood Sugar Level</label>
             <input class="form-control" type="number" id="su" name="su" required="required"
               placeholder="Blood Sugar Level">
           </div>
-
-          <!-- <div class="form-group">
-                <label for="Gender">Red blood cells</label>
-                <select class="form-control" id="rbc" name = "rbc" required="required" placeholder="Please Choose...">
-                  <option value="" disabled selected hidden>Please Choose...</option>
-                  <option value="0">Abnormal</option>
-                  <option value="1">Normal</option>
-                </select>
-              </div> -->
           <div class="form-group">
             <label for="Gender">Pus Cell</label>
             <select class="form-control" id="pc" name="pc" required="required" placeholder="Please Choose...">
@@ -138,51 +112,15 @@
                 <option value="1">Present</option>
               </select>
             </div>
-            <!-- <div class="form-group">
-                <label for="Gender">Bacteria</label>
-                <select class="form-control" id="bac" name = "bac" required="required" placeholder="Please Choose...">
-                  <option value="" disabled selected hidden>Please Choose...</option>
-                  <option value="0">Not Present</option>
-                  <option value="1">Present</option>
-                </select>
-              </div> -->
-            <!-- <div class="form-group">
-                <label for="rbc">Blood Glucose</label>
-                <input class="form-control" type="number" id="bgr" name="bgr" required="required" placeholder="Blood Glucose">
-              </div>
-              <div class="form-group">
-                <label for="rbc">Blood Urea</label>
-                <input class="form-control" type="number" id="bu" name="bu" required="required" placeholder="Blood Urea">
-              </div>
-              <div class="form-group">
-                <label for="rbc">Serum Creatinine</label>
-                <input class="form-control" type="number" step=any id="sc" name="sc" required="required" placeholder="Serum Creatinine">
-              </div> -->
             <div class="form-group">
               <label for="rbc">Sodium</label>
               <input class="form-control" step="any" type="number" id="sod" name="sod" required="required" placeholder="Sodium">
             </div>
-            <!-- <div class="form-group">
-                <label for="rbc">Potassium</label>
-                <input class="form-control" type="number" step=any id="pot" name="pot" required="required" placeholder="Potassium">
-              </div> -->
             <div class="form-group">
               <label for="rbc">hemoglobin</label>
               <input class="form-control" type="number" step=any id="hemo" name="hemo" required="required"
                 placeholder="hemoglobin">
             </div>
-            <!-- <div class="form-group">
-                <label for="rbc">packed_cell_volume</label>
-                <input class="form-control" type="number" id="pcv" name="pcv" required="required" placeholder="packed_cell_volume">
-              </div> -->
-            <!-- <div class="form-group">
-                <label for="rbc">White Blood Cells Count</label>
-                <input class="form-control" type="number" id="wbcc" name="wbcc" required="required" placeholder="White Blood Cells Count">
-              </div>
-              <div class="form-group">
-                <label for="rbc">Red Blood Cells Count</label>
-                <input class="form-control" type="number" step=any id="rbcc" name="rbcc" required="required" placeholder="Red Blood Cells Count">
-              </div> -->
             <div class="form-group">
               <label for="Gender">Hypertension</label>
               <select class="form-control" id="hyp" name="hyp" required="required" placeholder="Please Choose...">
@@ -199,38 +137,6 @@
                 <option value="1">Yes</option>
               </select>
             </div>
-            <!-- <div class="form-group">
-                <label for="Gender">Coronary artery disease</label>
-                <select class="form-control" id="cad" name = "cad" required="required" placeholder="Please Choose...">
-                  <option value="" disabled selected hidden>Please Choose...</option>
-                  <option value="0">No</option>
-                  <option value="1">Yes</option>
-                </select>
-              </div> -->
-            <!-- <div class="form-group">
-                <label for="Gender">Appetite</label>
-                <select class="form-control" id="ap" name = "ap" required="required" placeholder="Please Choose...">
-                  <option value="" disabled selected hidden>Please Choose...</option>
-                  <option value="0">Poor</option>
-                  <option value="1">good</option>
-                </select>
-              </div> -->
-            <!-- <div class="form-group">
-                <label for="Gender">Pedal Edema</label>
-                <select class="form-control" id="pe" name = "pe" required="required" placeholder="Please Choose...">
-                  <option value="" disabled selected hidden>Please Choose...</option>
-                  <option value="0">No</option>
-                  <option value="1">Yes</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="Gender">Anemia</label>
-                <select class="form-control" id="anemia" name = "anemia" required="required" placeholder="Please Choose...">
-                  <option value="" disabled selected hidden>Please Choose...</option>
-                  <option value="0">No</option>
-                  <option value="1">Yes</option>
-                </select>
-              </div> -->
             <div class="slidecontainer">
               <label for="Threshold">Threshold (Select the threshold for which you want to see the prediction)</label>
               <div></div>
@@ -250,19 +156,7 @@
     </div>
   </div>
   </div>
-  <!--/.Mask-->
-  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
