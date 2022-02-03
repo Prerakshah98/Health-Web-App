@@ -9,6 +9,6 @@ One feature that the web system provides is the threshold selection by the user 
 <ol>
   <li>Tools used: Python, Machine Learning, Flask, Heroku </li>
   <li>Machine Learning Algorithms used: Logistic Regression, Naive Bayes, XG-Boost, Random Forest, Fully Connected Neural networks</li>
-  <li>Milk</li>
 </ol>  
 
+![](images/homepage.pmg)
