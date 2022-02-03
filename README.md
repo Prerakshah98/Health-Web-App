@@ -11,4 +11,11 @@ One feature that the web system provides is the threshold selection by the user 
   <li>Machine Learning Algorithms used: Logistic Regression, Naive Bayes, XG-Boost, Random Forest, Fully Connected Neural networks</li>
 </ol>  
 
-![](images/homepage.pmg)
+
+<h2> Images </h2>
+  
+![Homepage](https://github.com/Prerakshah98/Health-Web-App/blob/master/images/homepage.PNG?raw=true)<br>
+  
+![Form](https://github.com/Prerakshah98/Health-Web-App/blob/master/images/diabetes_page.PNG?raw=true)<br>
+
+![result](https://github.com/Prerakshah98/Health-Web-App/blob/master/images/results_page.PNG?raw=true)
