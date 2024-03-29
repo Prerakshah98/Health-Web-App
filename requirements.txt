@@ -1,10 +1,9 @@
 Flask==2.0.2
 gunicorn==20.1.0
 tensorflow-cpu==2.5.1
-numpy
+numpy~=1.19.2
 scikit-learn==0.24.2
 pandas==1.3.4
 xgboost==1.5.0
-typing==3.10.0
 typing-extensions>=4.3.0,<5
-six
+six~=1.14.0  # Adjusted upper bound
